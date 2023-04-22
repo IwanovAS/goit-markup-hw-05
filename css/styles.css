@@ -128,9 +128,7 @@ button {
   border-radius: 2px;
 }
 
-.menu-link.current::after,
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link.current::after {
   background-color: #404bbf;
 }
 
@@ -446,12 +444,11 @@ button {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .logo-container {
   width: 264px;
-  height: 112px;
+  margin-right: 120px;
 }
 
 .social-container {
@@ -536,7 +533,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--transition-func),
-    color var(--transition-func), border-color var(--transition-func);
+    color var(--transition-func), border-color var(--transition-func),
+    box-shadow var(--transition-func);
 }
 
 .button-filter:hover,
@@ -644,7 +642,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opasity var(--transition-func), visibility var(--transition-func);
+  transition: opacity var(--transition-func), visibility var(--transition-func);
 }
 
 .backdrop.is-hidden {
@@ -679,7 +677,8 @@ button {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: border-color var(--transition-func);
+  transition: border-color var(--transition-func),
+    background-color var(--transition-func);
 }
 
 .modal-close-button:hover,
